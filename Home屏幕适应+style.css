@@ -1,22 +1,25 @@
 .container {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* 在小于480像素的屏幕上应用这些样式 */
 @media screen and (max-width: 480px) {
-  /* 在小于480像素的屏幕上应用这些样式 */
   body {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  /* 在480到768像素之间的屏幕上应用这些样式 */
+
+/* 在480到768像素之间的屏幕上应用这些样式 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   body {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 768px) {
-  /* 在大于768像素的屏幕上应用这些样式 */
+
+/* 在大于768像素的屏幕上应用这些样式 */
+@media screen and (min-width: 769px) {
   body {
     font-size: 18px;
   }
