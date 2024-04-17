@@ -1,5 +1,27 @@
 /* CSS样式 */
-    body {
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media screen and (max-width: 480px) {
+  /* 在小于480像素的屏幕上应用这些样式 */
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* 在480到768像素之间的屏幕上应用这些样式 */
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* 在大于768像素的屏幕上应用这些样式 */
+  body {
+    font-size: 18px;
+  }
+}    body {
       font-family: Arial, sans-serif;
       background-color: #cccbcb; /* 修改背景颜色 */
       margin: 0;
