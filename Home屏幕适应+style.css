@@ -1,0 +1,133 @@
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media screen and (max-width: 480px) {
+  /* 在小于480像素的屏幕上应用这些样式 */
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* 在480到768像素之间的屏幕上应用这些样式 */
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* 在大于768像素的屏幕上应用这些样式 */
+  body {
+    font-size: 18px;
+  }
+}
+body {
+  background-color: #cccbcb;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0px;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #79050598;
+  text-align:center;
+  line-height: 50px; /* 设置导航内容垂直居中 */
+}
+.content {
+  padding-top: 50px; /* 为导航腾出空间 */
+  padding-bottom: 100px; /* 为底部内容腾出空间 */
+}
+
+.footer {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 10px;
+background: #4e4d4dc0;
+text-align: center;
+padding: 20px;
+font-size: 10px;
+color: #fff;
+box-sizing: border-box;
+line-height: 5%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #292828;
+}
+
+.main-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-image img {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.main-paragraph {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 28px;
+  color: #424242;
+}
+
+.main-paragraph p {
+  margin-bottom: 10px;
+}
+
+.translation {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #790505e7;
+}
+
+.sub-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.sub-images img {
+  display: block;
+  width: 200px;
+  height: 120px;
+}
+
+.sub-images p {
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+
+.translation p {
+  margin-bottom: 10px;
+}
+.text1{
+  position:absolute;
+  top:calc(50% - 60px);
+  left:calc(50% - 25px);
+  font-size: 28px ;
+  color: #790505e7
+} 
+.text2{
+  position:absolute;
+  top:calc(50% + 30px);
+  left:calc(50% - 70px);
+  font-size: 9px ;
+  color: #790505e7
+}

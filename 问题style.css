@@ -1,0 +1,104 @@
+/* 样式设置 */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    overflow-x: hidden;
+  }
+  h2{
+    color: #790505;
+    text-align: center;
+  }
+  h3{
+    color:#790505b9
+  }
+  p{
+    text-align: justify;
+    color:#4e4d4de8;
+    font-weight: bold;
+  }
+  p:lang(zh){
+    text-indent: 2em;
+  }
+  p:lang(en){
+    text-indent: 0em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* 顶部留出空间 */
+  }
+  .section {
+    max-width: 900px; /* 增加内容板块的宽度 */
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 60px;
+  }
+  .section img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  #navigation-container {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px; /* 调整导航栏宽度 */
+      transition: width 0.3s; /* 添加过渡效果 */
+    }
+    #navigation {
+      background-color: #79050598; /* 修改导航栏颜色 */
+      padding: 20px;
+      overflow: hidden;
+      width: 0;
+      transition: width 0.3s; /* 添加过渡效果 */
+      opacity: 1;
+    }
+    #navigation.show {
+      width: 200px; /* 显示完整导航栏 */
+    }
+    #navigation ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    #navigation li {
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    #navigation a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      white-space: nowrap; /* 不换行 */
+      overflow: hidden;
+      text-overflow: ellipsis; /* 文字过长显示省略号 */
+    }
+    #toggle-button {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #79050598;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .footer {
+    margin-top: auto;
+    background: #4e4d4dc0;
+    padding: 20px;
+    font-size: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width:100%
+  }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>月经用品科普</title>
+  <link rel="stylesheet" type="text/css" href="用品style.css">
+</head>
+<body>
+  <!-- 总介绍板块 -->
+  <div class="section">
+    <div class="text">
+      <h2 style="color: #790505;">月经用品 Menstrual Products </h2>
+      <p lang="zh">月经用品是用于管理月经流量的必备物品，由个体在月经期间使用。市面上有几种类型的月经用品，每种提供不同级别的保护和舒适度。</p>
+      <p lang="en">Menstrual products are essential items used by individuals during menstruation to manage menstrual flow. There are several types of menstrual products available on the market, each offering different levels of protection and comfort.</p>
+    </div>
+  </div>
+  <!-- 板块内容 -->
+  <div class="section" id="pad">
+    <div class="text">
+      <h2 style="color: #790505;">卫生巾 <br>Menstrual Pads</br></h2>
+      <p lang="zh">也称为卫生棉，这些吸收性垫片穿在内裤内，用于吸收月经血液。它们有各种尺寸、厚度和吸收能力，以适应不同的需求。</p>
+      <p lang="en">Menstrual Pads: Also known as sanitary pads or sanitary napkins, these are absorbent pads worn inside underwear to absorb menstrual blood. They come in various sizes, thicknesses, and absorbencies to suit different needs.</p>
+    </div>
+    <div class="image">
+      <img src="images/pad.jpg" alt="卫生巾图片">
+    </div>
+  </div>
+
+  <div class="section" id="tampon">
+    <div class="text">
+      <h2 style="color: #790505;">卫生棉条 Tampons</h2>
+      <p lang="zh">卫生棉条是圆筒形的产品，用于插入阴道内，吸收月经血液。它们通常具有塑料或纤维芯，有不同的尺寸和吸收能力。</p>
+      <p lang="en">Tampons are cylindrical-shaped products designed to be inserted into the vagina to absorb menstrual blood. They typically have a plastic or fiber core and come in different sizes and absorbencies.</p>
+    </div>
+    <div class="image">
+      <img src="images/tampon.jpg" alt="卫生棉条图片">
+    </div>
+  </div>
+
+  <div class="section" id="cup">
+    <div class="text">
+      <h2 style="color: #790505;">月经杯 <br>Menstrual Cups</br></h2>
+      <p lang="zh">月经杯是一种可重复使用的杯状产品，用于收集月经血液。它们由柔软的医用级硅胶或橡胶制成，适合长期使用，并且对环境友好。</p>
+      <p lang="en">Menstrual cups are reusable cup-shaped products designed to collect menstrual blood. They are made of soft medical-grade silicone or rubber, suitable for long-term use, and environmentally friendly.</p>
+    </div>
+    <div class="image">
+      <img src="images/cup.jpg" alt="月经杯图片">
+    </div>
+  </div>
+
+  <div class="section" id="disc">
+    <div class="text">
+      <h2 style="color: #790505;">月经盘 <br>Menstrual Discs</br></h2>
+      <p lang="zh">月经盘是一种类似于月经杯的可重复使用产品，设计用于收集月经血液。它们通常由柔软的医用级硅胶或橡胶制成，具有不同的尺寸和形状，适合各种体型的女性。</p>
+      <p lang="en">Menstrual discs are reusable products similar to menstrual cups, designed to collect menstrual blood. They are usually made of soft medical-grade silicone or rubber, with different sizes and shapes available to accommodate various body types of individuals.</p>
+    </div>
+    <div class="image">
+      <img src="images/disc.jpg" alt="月经盘图片">
+    </div>
+  </div>
+
+  <div class="section" id="ancient">
+    <div class="text">
+      <h2 style="color: #790505;">月经带 Menstrual Belt</h2>
+      <p lang="zh">又称月经布、月经衣、骑马布，将两侧绑带系于腰间，中间可以放上吸收用物品以吸收经血，带子使用后可以清洗并重复使用。</p>
+      <p lang="en">Also known as menstrual cloth, menstrual wear, or horse-riding cloth. Hung around the waist and place any absorbent available in the middle to absorb menses. After use, it can be washed and reused.</p>
+    </div>
+    <div class="image">
+      <img src="images/belt.jpg" alt="古代月经用品图片">
+    </div>
+  </div>
+  <div style="height: 20px;"></div>
+  <div id="navigation-container">
+    <div id="toggle-button" onclick="toggleNavigation()">&#9776;</div>
+    <div id="navigation">
+      <ul>
+        <li><a href="index.html">主页 Home</a></li>
+        <li><a href="#pad">卫生巾 Menstrual Pads</a></li>
+        <li><a href="#tampon">卫生棉条 Tampons</a></li>
+        <li><a href="#cup">月经杯 Menstrual Cups</a></li>
+        <li><a href="#disc">月经盘 Menstrual Discs</a></li>
+        <li><a href="#ancient">月经带 Menstrual Belt</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <!-- 页脚 -->
+    <p style="text-align: center;">版权所有 &copy; 2024 Ashley  关于我们Contact Us | 1029026804@qq.com</p>
+  </div>
+  <script>
+    function toggleNavigation() {
+      var navigation = document.getElementById('navigation');
+      navigation.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

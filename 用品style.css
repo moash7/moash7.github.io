@@ -1,0 +1,95 @@
+/* CSS样式 */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #cccbcb; /* 修改背景颜色 */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    #navigation-container {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px; /* 调整导航栏宽度 */
+      transition: width 0.3s; /* 添加过渡效果 */
+    }
+    #navigation {
+      background-color: #79050598; /* 修改导航栏颜色 */
+      padding: 20px;
+      overflow: hidden;
+      width: 0;
+      transition: width 0.3s; /* 添加过渡效果 */
+      opacity: 1;
+    }
+    #navigation.show {
+      width: 200px; /* 显示完整导航栏 */
+    }
+    #navigation ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    #navigation li {
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    #navigation a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      white-space: nowrap; /* 不换行 */
+      overflow: hidden;
+      text-overflow: ellipsis; /* 文字过长显示省略号 */
+    }
+    #toggle-button {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #79050598;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+    /* 板块样式 */
+    .section {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin-top: 20px;
+      background-color: #fff;
+      margin-left: 60px; /* 留出导航栏宽度的空间 */
+    }
+    .section:nth-child(even) {
+      flex-direction: row-reverse; /* 第二、四板块文字在左，图片在右 */
+    }
+    .text {
+      flex: 1;
+    }
+    .image {
+      flex: 1;
+      margin: 0 20px;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+    p:lang(zh){
+        text-indent: 2em;
+    }
+    p{
+        text-align: justify;
+    }
+    .footer {
+      margin-top: auto;
+      background: #4e4d4dc0;
+      text-align: center;
+      padding: 20px;
+      font-size: 10px;
+      color: #fff;
+      box-sizing: border-box;
+      margin-bottom: 0;
+    }
