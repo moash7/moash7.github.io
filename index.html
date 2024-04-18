@@ -7,13 +7,17 @@
   <link rel="stylesheet" type="text/css" href="Home屏幕适应+style.css">
 </head>
 <body>
-  <div class="nav">
-    <!-- 导航内容 -->
-    <a style="color: #FFFF;"href="index.html">主页 Home</a>
-    <a style="color: #FFFF;"href="月经用品.html">月经用品 Menstruation Products </a>
-    <a style="color: #FFFF;"href="月经常识.html">月经常识 Menstrual Knowledge</a>
-    <a style="color: #FFFF;"href="月经问题.html">月经问题 Menstrual-related Issues</a>
-  </div>
+  <div id="red-bar"></div>
+ <!-- 添加按钮 -->
+ <div id="toggle-button" onclick="toggleNavigation()">&#9776;</div>
+
+ <div class="nav" id="navigation-container"> <!-- 添加 id -->
+   <!-- 导航内容 -->
+   <a style="color: #FFFF;"href="index.html">主页 Home</a>
+   <a style="color: #FFFF;"href="月经用品.html">月经用品 Menstruation Products </a>
+   <a style="color: #FFFF;"href="月经常识.html">月经常识 Menstrual Knowledge</a>
+   <a style="color: #FFFF;"href="月经问题.html">月经问题 Menstrual-related Issues</a>
+ </div>
 <div class="content">
   <div class="main-image">
     <img src="images/main-image.jpg">
@@ -84,6 +88,17 @@
   <!-- 页脚 -->
   <p>版权所有 &copy; 2024 Ashley  关于我们Contact Us | 1029026804@qq.com</p>
 </div>
+<script>
+  // JavaScript 部分，用于控制导航栏的显示与隐藏
+  function toggleNavigation() {
+    var nav = document.getElementById('navigation-container');
+    if (nav.style.display === 'none') {
+      nav.style.display = 'block';
+    } else {
+      nav.style.display = 'none';
+    }
+  }
+</script>
 </body>
 </div>
 </body>
