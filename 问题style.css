@@ -91,14 +91,16 @@
       padding: 10px;
       cursor: pointer;
     }
-    .footer {
-    margin-top: auto;
-    background: #4e4d4dc0;
-    padding: 20px;
-    font-size: 10px;
-    color: #fff;
-    box-sizing: border-box;
-    bottom: 0;
-    left: 0;
-    width:100%
-  }
+   /* footer.css */
+.footer {
+  margin-top: auto;
+  background: #4e4d4dc0;
+  text-align: center;
+  padding: 20px;
+  font-size: 10px;
+  color: #fff !important; /* 设置文字颜色为白色 */
+  box-sizing: border-box;
+  margin-bottom: 0;
+  width: 100%;
+  line-height: 1; /* 调整行高为1，实现文字垂直居中 */
+}
