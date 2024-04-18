@@ -64,7 +64,6 @@ body {
   width: 100%;
   height: 50px;
   background: #79050598;
-  z-index:9998;
 }
 .content {
   padding-top: 50px; /* 为导航腾出空间 */
